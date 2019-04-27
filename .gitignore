@@ -1,0 +1,5 @@
+*~
+*.asv
+external_libs/matconvnet/
+external_libs/pdollar_toolbox/
+feature_extraction/networks

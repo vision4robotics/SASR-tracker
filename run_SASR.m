@@ -50,7 +50,7 @@ params.eta=1e7;
 params.back_imp=0.05;
 params.offset_prop=1.08;
 
-% learning rate
+% learning rate for model update
 params.learning_rate=0.017;
 
 % Detection parameters

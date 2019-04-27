@@ -15,7 +15,7 @@ This repository is the matlab implementation for "Surrounding-Aware Correlation 
 
 1. Download zipfile of this repository and extract it somewhere or use git:
 
-   $ git clone <https://github.com/xxxxxxxxxxxxxxxxxxxxxx>
+   $ git clone <https://github.com/vision4robotics/SASR-tracker.git>
 
 2. Download matconvnet from the [homepage](http://www.vlfeat.org/matconvnet) or [Github](<https://github.com/vlfeat/matconvnet>), and Piotr Dollár's toolbox from [Webpage]( <https://pdollar.github.io/toolbox/>) or [GitHub](https://github.com/pdollar/toolbox) . Then, extract them at `.\SASR_release_v1.0\external_libs`
 

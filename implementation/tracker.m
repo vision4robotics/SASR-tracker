@@ -51,7 +51,6 @@ admm_max_iterations = params.max_iterations;
 init_penalty_factor = params.init_penalty_factor;
 max_penalty_factor = params.max_penalty_factor;
 penalty_scale_step = params.penalty_scale_step;
-temporal_regularization_factor = params.temporal_regularization_factor;
 
 init_target_sz = target_sz;
 
@@ -340,7 +339,6 @@ while true
         
         % pre-compute the variables
         T = prod(output_sz);
-        %         S_xx = sum(conj(model_xf{k}) .* model_xf{k}, 3);
         S_xx = sum( sum( conj(extend_xf) .* extend_xf, 3) ,4);
         
         % solve via ADMM algorithm

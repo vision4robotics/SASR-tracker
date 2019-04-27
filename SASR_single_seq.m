@@ -1,16 +1,18 @@
+% Here is a demo for SASR "Surrounding-Aware Correlation Filter for UAV Tracking  with Selective Spatial Regularization" 
 
 clc;
 clear;
 close all;
 
+% setup path for video sequences and annotation
 anno_path = 'seq\anno\';
 img_path = 'seq\data_seq\';
 setup_paths();
 
-
+% load an video and then load information for tracking
+% the sequence here comes from 'UAV123_10fps'
 video_name = choose_video_UAV(anno_path);
-database_folder = img_path;
-seq = load_video_info_UAV123(video_name, database_folder, anno_path, 'UAV123_10fps');
+seq = load_video_info_UAV123(video_name, img_path, anno_path, 'UAV123_10fps');
 
 % main function
 result  =   run_SASR(seq,0,0);

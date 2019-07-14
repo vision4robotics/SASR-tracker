@@ -1,14 +1,22 @@
 ## SASR
 
 This repository is the matlab implementation for "Surrounding-Aware Correlation Filter for UAV Tracking  with Selective Spatial Regularization"
-Video available at [YouTube](https://youtu.be/MnbuYtjfj58)
+Video available at [YouTube](https://youtu.be/VDvuNhQ5UMc)
+
 ### Overall Performance
+
+SASR performs favorably against 23 state-of-the-art trackers on challenging UAV tracking sequences from UAV123 and UAVDT.
+
 <div  align="left">
-    <center>Overall Performance<center>
-<img src="assets/1556353055981.png" style="zoom:40%" />
-<img src="assets/1556353140578.png" style="zoom:40%"/>
+    <center>Figure 1 Performance on 100 challenging sequences from UAV123<center>
+<img src="assets/UAV123_error-OPE.jpg" style="zoom:30%" />
+<img src="assets/UAV123_overlap-OPE.jpg" style="zoom:30%"/>
    <br> <br>
+            <center>Figure 2 Performance TOP-5 trackers from Fig.1 on UAVDT<center>
+<img src="assets/UAVDT_error-OPE.jpg" style="zoom:35%" />
+<img src="assets/UAVDT_overlap-OPE.jpg" style="zoom:35%"/>
 </div>
+
 
 
 ### Installation
@@ -19,7 +27,7 @@ Video available at [YouTube](https://youtu.be/MnbuYtjfj58)
 
 2. Download matconvnet from the [homepage](http://www.vlfeat.org/matconvnet) or [Github](<https://github.com/vlfeat/matconvnet>), and Piotr Dollár's toolbox from [Webpage]( <https://pdollar.github.io/toolbox/>) or [GitHub](https://github.com/pdollar/toolbox) . Then, extract them at `.\SASR_release_v1.0\external_libs`
 
-3. Start Matlab and navigate to this repository, run `install.m` to compile Piotr Dollár's toolbox and matconvnet. The script will automatically download `imagenet-vgg-m-2048.mat` used in SASR, it may take some time depending on your Internet. You can manually download it from [here](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-m-2048.mat). If you have it already, just copy it to `.\SASR_release_v1.0\feature_extraction\networks`. This step may take some time and you may see a lot of warnings.
+3. Start Matlab and navigate to this repository, run `install.m` to compile Piotr Dollár's toolbox and matconvnet. This step may take some time and you may see a lot of warnings. The script will automatically download `imagenet-vgg-m-2048.mat` used in SASR, it may take some time depending on your Internet. You can manually download it from [here](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-m-2048.mat). If you have it already, just copy it to `.\SASR_release_v1.0\feature_extraction\networks`. 
 
 4. Run `SASR_single_seq.m`, you will be able to chose `wakeboard5` with GUI.
 
@@ -27,7 +35,7 @@ Video available at [YouTube](https://youtu.be/MnbuYtjfj58)
 
 #### Possible Issues
 
-The code is tested on Matlab R2018a with CUDA 9.0 and cuDNN 7.3.0 for CUDA 9.0.
+The code is tested on Matlab R2017b with CUDA 8.0.
 
 Matconvnet is also the latest when this work is completed.
 
@@ -51,7 +59,7 @@ flags.base, flags.mexlink, ...
 objs) ;
 ```
 
-If you want to use cuDNN toolkit, you may have to modify `\SASR_release_v1.0\install.m`
+If you want to use cuDNN toolkit, you may have to install cuDNN and modify `\SASR_release_v1.0\install.m`
 
 Modify line 30 into 
 

@@ -40,7 +40,7 @@ params.max_image_sample_size = 250^2;   % Maximum area of image samples
 
 % Spatial regularization window_parameters
 params.feature_downsample_ratio = [4, 14]; %  Feature downsample ratio 
-%(We found that decreasing the downsampling ratios of CNN layer may benefit the performance)
+% (We found that decreasing the downsampling ratios of CNN layer may benefit the performance)
 params.reg_window_max = 1e5;           % The maximum value of the regularization window
 params.reg_window_min = 1e-3;           % The minimum value of the regularization window
 params.regularizer_size=1;
@@ -53,14 +53,13 @@ params.offset_prop=1.08;
 % learning rate for model update
 params.learning_rate=0.017;
 
+% Labelfunction parameters
+params.output_sigma_factor = 1/16;		% Label function sigma
+
 % Detection parameters
 params.refinement_iterations = 1;       % Number of iterations used to refine the resulting position in a frame
 params.newton_iterations = 5;           % The number of Newton iterations used for optimizing the detection score
 params.clamp_position = false;          % Clamp the target position to be inside the image
-
-% Learning parameters
-params.output_sigma_factor = 1/16;		% Label function sigma
-params.temporal_regularization_factor = [15 15]; % The temporal regularization parameters
 
 % ADMM parameters
 params.max_iterations = [2 2];

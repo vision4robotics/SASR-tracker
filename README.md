@@ -73,6 +73,20 @@ Modify line 30 into
 
 
 
+If you are using visual studio 2017 or newer version, matlab may not be able to find `cl.exe`, in this case, you need to manually set the path to it.
+
+Modify line 659 into
+
+```matlab
+cl_path = "YOUR PATH TO cl.exe";
+```
+
+
+
+
+
+
+
 ### Acknowledgement
 
 We thank for Dr. Li Feng and his team for their valuable help on our work.

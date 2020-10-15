@@ -4,7 +4,7 @@ This repository is the matlab implementation for "Surrounding-Aware Correlation 
 Video available at [YouTube](https://youtu.be/VDvuNhQ5UMc)
 
 
-### Publishment and Citation
+### Publication and Citation
 
 This paper has been published by Signal Processing.
 

@@ -3,6 +3,31 @@
 This repository is the matlab implementation for "Surrounding-Aware Correlation Filter for UAV Tracking  with Selective Spatial Regularization"
 Video available at [YouTube](https://youtu.be/VDvuNhQ5UMc)
 
+
+### Publishment and Citation
+
+This paper has been published by Signal Processing.
+
+You can find this paper here: https://www.sciencedirect.com/science/article/pii/S0165168419303779.
+
+Please cite this paper as:
+
+@article{FU2020107324,
+
+title = {Surrounding-aware correlation filter for UAV tracking with selective spatial regularization},
+
+author = {Changhong Fu and Weijiang Xiong and Fuling Lin and Yufeng Yue}
+
+journal = {Signal Processing},
+
+volume = {167},
+
+pages = {107324},
+
+year = {2020}
+
+}
+
 ### Overall Performance
 
 SASR performs favorably against 23 state-of-the-art trackers on challenging UAV tracking sequences from UAV123 and UAVDT.
